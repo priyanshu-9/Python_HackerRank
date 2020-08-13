@@ -1,0 +1,28 @@
+N = int(input())
+boom=[]
+for _ in range(N):
+    s=input().split()
+    c=s[0]
+    a=s[1:]
+    if c !="print" and c!="remove" :
+        if c=="insert" :
+            x=int(a[0])
+            y=int(a[1])
+            boom.insert(x,y)
+        elif c== "append":
+            x=int(a[0])
+            boom.append(x)
+        elif c== "sort":
+            boom.sort()
+        elif c== "pop":
+            boom.pop()
+        elif c== "reverse":
+            boom.reverse()
+    else:
+        if c=="remove":
+            boom.remove(int(a[0]))
+        else :
+            print(boom)
+
+       
+        
