@@ -1,0 +1,48 @@
+x=input().split(" ")
+a=int(x[0])
+b=int(x[1])
+i=1
+l=1
+o=1
+d=0
+#part 1
+
+q=int((a-1)/2)
+while i<=q:
+    z=o*3
+    m=int((b-z)/2)
+    for s in range(m):
+        print("-",end="")
+    for w in range(o):
+        print(".|.",end="")
+    for f in range(m):
+        print("-",end="")
+    o=o+2
+    d=o-2
+    print("")
+    i=i+1
+    
+#part 2
+    
+n=int((b-7)/2)
+for s in range(n):
+    print("-",end="")
+print("WELCOME",end="")
+for s in range(n):
+    print("-",end="")
+print("")
+
+# part 3
+
+while l<=q:
+    z=d*3
+    u=int((b-z)/2)
+    for t in range(u):
+        print("-",end="")
+    for t in range(d):
+        print(".|.",end="")
+    for t in range(u):
+        print("-",end="")
+    d=d-2
+    print("")
+    l=l+1
